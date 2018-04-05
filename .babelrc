@@ -1,0 +1,14 @@
+//setting up presets so that jsx can be created every time the environment changes. 
+{
+    "presets": [
+        "env", 
+        "react"
+    ],
+
+//allows us to customize how we can style our classes for each of our components
+
+    "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread"
+    ]
+}
