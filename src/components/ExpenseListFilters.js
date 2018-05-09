@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { DateRangePicker } from 'react-dates';
+import {Link, NavLink} from 'react-router-dom';
 import { setTextFilter, sortByAmount, sortByDate, setStartDate, setEndDate } from '../actions/filters';
 
 class ExpenseListFilters extends React.Component {
@@ -29,6 +30,9 @@ class ExpenseListFilters extends React.Component {
             return (
               <div className="content-container">
                 <div className="input-group">
+                  <div className="input-group__item">
+                    <Link className="button" to="/create">Add Expense</Link>
+                  </div>
                   <div className="input-group__item">
                     <input
                     placeholder="Search Expenses"
